@@ -1,0 +1,109 @@
+#home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 250px 20px;
+}
+
+.text {
+  flex: 0.8;
+  color: white;
+}
+
+/* .text * { */
+/*   border: 1px solid white; */
+/* } */
+
+.greeting {
+  font-size: 40px;
+}
+
+.whoAmI {
+  font-size: 30px;
+}
+
+.name {
+  font-size: 60px;
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0%, 10%, 20%, 30% {
+    text-shadow: none;
+  }
+  15%, 18%, 25%, 100% {
+    text-shadow: 0 0 8px #0ef;
+  }
+}
+
+.image {
+  width: 500px;
+  height: 600px;
+  position: relative;
+  background-image: url('./hanuman.jpg');
+  background-size: cover;
+}
+
+.typing {
+  position: relative;
+  color: #2b2d42;
+}
+
+.typing::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: white;
+  background-color: #3d5a80;
+  width: 100%;
+  animation: typing 1.5s alternate infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 0%;
+  }
+}
+
+.icons {
+  margin: 20px;
+  /* background-color: white; */
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons i {
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  padding: 15px;
+  color: #0ef;
+  transition: 0.5s ease;
+}
+
+.icons i:hover {
+  background: #0ef;
+  color: #3d5a80;
+}
+
+.downloadCV {
+  margin-top: 40px;
+  margin-left: 20px;
+  color: #3d5a80;
+  font-size: 15px;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  border: none;
+}
+
+.downloadCV a {
+  padding: 15px;
+  background: #0ef;
+  border: none;
+  border-radius: 5em;
+  transition: 0.1s ease;
+}
+
+.downloadCV a:hover {
+  box-shadow: 0 0 9px #0ef;
+}
