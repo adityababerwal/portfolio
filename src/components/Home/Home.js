@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import './Home.css';
 
-import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -36,11 +35,6 @@ const Home = () => {
           </div>
 
           <div className="mediaLinks">
-            <a href="https://www.instagram.com/baberwal_aditya/">
-              <div className="mediaLink">
-                <InstagramIcon/>
-              </div>
-            </a>
             <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=adityababerwal@gmail.com">
               <div className="mediaLink">
                 <MailOutlineIcon/>
