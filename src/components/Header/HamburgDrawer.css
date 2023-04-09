@@ -1,0 +1,14 @@
+.drawerLinks {
+  margin: 1rem;
+}
+
+.listItem {
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  justify-content: center;
+}
+
+.listItem:hover {
+  background-color: rgba(57, 54, 70, 0.2);
+  transform: scale(1.1);
+}

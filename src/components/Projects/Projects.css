@@ -7,11 +7,6 @@
   height: 980px;
 }
 
-.title {
-  font-size: 50px;
-  color: whitesmoke;
-}
-
 .cards {
   display: flex;
   justify-content: space-between;
@@ -19,21 +14,28 @@
   height: 60%;
 }
 
-.cards * {
+.card {
   margin: auto 10px;
   padding: 20px 20px;
   background-color: white;
   border-radius: 5rem;
-  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform .4s ease;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  z-index: 1;
 }
 
 .heading {
   background-color: red;
-}
-
-ul {
-  width: 100%;
-}
-li {
-  background-color: blue;
+  border-radius: 5rem;
+  padding: 10px;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 20px;
 }

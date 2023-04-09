@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Poppins:wght@300&display=swap');
 
-* {
-  margin: 0;
+:root {
+  --bg: #3d5a80;
+  --header-bg: #2b2d42;
+  --glow-color: #0ef;
 }
