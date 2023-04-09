@@ -4,12 +4,7 @@ import './Projects.css';
 const Projects = () => {
   return (
     <div id="Projects">
-      <div className="title" 
-        style={{
-          fontWeight: '600',
-          fontSize: '70px',
-          color: 'white',
-        }}>
+      <div className="title">
         Projects
       </div>
 
@@ -29,6 +24,12 @@ const Projects = () => {
             <li>Equipped with precise, accurate and high-definition camera and sensors</li>
             <li>Can self-align with the pipe while avoiding any obstacles in the path</li>
             <li>Can map its surroundings</li>
+            <li>Tools used
+              <ul>
+                <li>Arduino</li>
+                <li>RaspberryPi</li>
+              </ul>
+            </li>
           </ul>
         </div>
         <div className="card">

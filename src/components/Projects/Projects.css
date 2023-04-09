@@ -4,7 +4,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 980px;
+  height: 100vh;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 70px;
+  color: white;
 }
 
 .cards {
@@ -14,26 +20,35 @@
   height: 60%;
 }
 
+@media (max-width: 1200px) {
+  .cards {
+    flex-direction: column;
+    width: 70vw;
+    row-gap: 10px;
+  }
+}
+
 .card {
   margin: auto 10px;
   padding: 20px 20px;
   background-color: white;
-  border-radius: 5rem;
+  border-radius: 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: transform .4s ease;
+  text-align: justify;
 }
 
 .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
   z-index: 1;
 }
 
 .heading {
   background-color: red;
-  border-radius: 5rem;
+  border-radius: 5vw;
   padding: 10px;
   color: whitesmoke;
   font-weight: 600;

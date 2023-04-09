@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 }
 
 .container {
@@ -39,7 +40,6 @@
 
 .greet {
   font-size: 55px;
-  font-weight: bolder;
 }
 
 .myName {
@@ -51,16 +51,18 @@
   display: flex;
   column-gap: 8px;
 }
-@media (max-width: 760px) {
+@media (max-width: 770px) {
   .whoAmI { flex-direction: column; }
 }
 
 @media (max-width: 560px) {
-  .greet { font-size: 7vw; }
+  .greet { font-size: 6.5vw; }
 
-  .myName { font-size: 11vw;}
+  .myName { font-size: 9.7vw;}
 
   .whoAmI {font-size: 5vw;}
+
+  .typingText::before {font-size: 5.5vw;}
   
   
 }
@@ -75,15 +77,18 @@
 
 .typingText {
   position: relative;
+  color: var(--header-bg);
+  font-weight: 900;
+  width: max-content;
 }
 
 .typingText::before {
   content: "|";
+  color: var(--glow-color);
   right: 0;
   position: absolute;
   background-color: var(--bg);
-  width: 100%;
-  animation: typing 1s alternate infinite;
+  animation: typing 1s alternate infinite ease-in-out;
 }
 
 @keyframes typing {
@@ -98,7 +103,7 @@
 .mediaLinks {
   margin-top: 1vh;
   padding: 5px;
-  width: 30%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
 }
