@@ -5,7 +5,10 @@
 .listItem {
   border-radius: 5px;
   transition: transform 0.3s ease-in-out;
+  padding: 1vh 0vh;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .listItem:hover {

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import './Header.css';
 import HamBurgDrawer from './HamburgDrawer.js';
 
 const Header = () => {
+
+  const Pages = ["Home", "Projects", "About", "Contact"];
 
 
   return (
@@ -10,12 +12,17 @@ const Header = () => {
 
       <div id="portfolio">Portfolio</div>
 
-      <HamBurgDrawer className="hamBurgDrawer" style={{display: 'none'}}/>
+      <div className="hamBurgDrawer">
+        <HamBurgDrawer Pages={Pages}/>
+      </div>
+
       <div className="links">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#ContactMe">Contact Me</a></li>
+          {
+            Pages.map((Page) => (
+              <li><a href={`#${Page}`} className="navLinks">{Page}</a></li>
+            ))
+          }
         </ul>
       </div>
 

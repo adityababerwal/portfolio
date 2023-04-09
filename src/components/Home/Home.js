@@ -21,13 +21,13 @@ const Home = () => {
   }, []);
 
   return (
-  <div id="home">
+  <div id="Home">
       <div className="container">
         <div className="text">
           <div className="greet">
             Hello, I'm
           </div>
-          <div className="myName" style={{flexWrap: 'nowrap'}}>
+          <div className="myName">
             Aditya Baberwal
           </div>
           <div className="whoAmI">
@@ -37,7 +37,7 @@ const Home = () => {
           <div className="mediaLinks">
             <a href="https://www.instagram.com/baberwal_aditya/" ><div className="mediaLink"><InstagramIcon/></div></a>
             <a
-              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=roshankishore17@gmail.com"
+              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=adityababerwal@gmail.com"
               
             >
               <div className="mediaLink"><MailOutlineIcon/></div>

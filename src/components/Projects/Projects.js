@@ -3,7 +3,7 @@ import './Projects.css';
 
 const Projects = () => {
   return (
-    <div id="projects">
+    <div id="Projects">
       <div className="title" 
         style={{
           fontWeight: '600',

@@ -3,16 +3,14 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 import './HamburgDrawer.css';
+import { ListItemText } from '@mui/material';
 
-export default function TemporaryDrawer() {
+export default function TemporaryDrawer({Pages}) {
   const [state, setState] = React.useState({
     right: false,
   });
@@ -32,16 +30,25 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+      <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+      <Button 
+        onClick={toggleDrawer('right', true)}
+        style={{color: 'black', fontSize: '20px', margin: '1vh'}}
+      >
+        <CloseIcon/>
+      </Button>
+      </div>
       <List className='drawerLinks'>
-        <ListItem className='listItem'>
-          <a href="#">Home</a>
-        </ListItem>
-        <ListItem className='listItem'>
-          <a href="#">Projects</a>
-        </ListItem>
-        <ListItem className='listItem'>
-          <a href="#">Contact Me</a>
-        </ListItem>
+        {
+          Pages.map((Page) => (
+            <ListItem>
+              <ListItemText className='listItem'>
+                <a href={`#${Page}`}>{Page}</a>
+              </ListItemText>
+            </ListItem>
+            ) 
+          )
+        }
       </List>
     </Box>
   );
