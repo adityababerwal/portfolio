@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import './components/Header/Header';
 import Header from './components/Header/Header';
@@ -9,12 +10,12 @@ import Projects from './components/Projects/Projects';
 function App() {
   return (
     <div className="App">
-      {/*<Header/>*/}
       <Header/>
       <Home/>
-      {/*<Home/>*/}
-      {/*<Projects/>*/}
       <Projects/>
+      {/*
+<About/>
+      */}
       <Footer/>
     </div>
   );
