@@ -4,7 +4,11 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div id="Footer">
-      Site under Progress
+      <div
+        style={{fontSize: '25px'}}
+      >
+        Aditya Baberwal </div>
+      <div>always upgrading</div>
     </div>
   )
 }
