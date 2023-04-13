@@ -12,6 +12,22 @@
   height: 7rem;
 }
 
+@media (max-width: 1200px) {
+  .header {
+    height: 10vw;
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    height: 13vw;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    height: 20vw;
+  }
+}
+
 .header ul {
   list-style: none;
   display: flex;

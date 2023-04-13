@@ -38,18 +38,16 @@ export default function TemporaryDrawer({Pages}) {
         <CloseIcon/>
       </Button>
       </div>
-      <List className='drawerLinks'>
+      <div className='drawerLinks'>
         {
           Pages.map((Page) => (
-            <ListItem>
-              <ListItemText className='listItem'>
-                <a href={`#${Page}`}>{Page}</a>
-              </ListItemText>
-            </ListItem>
+            <a href={`#${Page}`} className='listItem'>
+                {Page}
+            </a>
             ) 
           )
         }
-      </List>
+      </div>
     </Box>
   );
 
@@ -61,7 +59,7 @@ export default function TemporaryDrawer({Pages}) {
           style={{color: 'white', fontSize: '20px'}}
           >
           <MenuIcon/>
-          </Button>
+        </Button>
           <Drawer
             anchor={'right'}
             open={state['right']}
