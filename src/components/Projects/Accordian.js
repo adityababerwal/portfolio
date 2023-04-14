@@ -24,7 +24,7 @@ export default function ControlledAccordions() {
         expanded={expanded === 'panel1'}
         onChange={handleChange('panel1')}
         sx={{
-          boxShadow: '0 0 30px var(--glow-color)',
+          boxShadow: '10px 10px 30px #262626',
           borderRadius: 1,
         }}
       >
@@ -61,7 +61,7 @@ export default function ControlledAccordions() {
         expanded={expanded === 'panel2'}
         onChange={handleChange('panel2')}
         sx={{
-          boxShadow: '0 0 30px var(--glow-color)',
+          boxShadow: '10px 10px 30px #262626',
           borderRadius: 1,
         }}
       >
@@ -90,7 +90,7 @@ export default function ControlledAccordions() {
         expanded={expanded === 'panel3'}
         onChange={handleChange('panel3')}
         sx={{
-          boxShadow: '0 0 30px var(--glow-color)',
+          boxShadow: '10px 10px 30px #262626',
           borderRadius: 1,
         }}
       >
