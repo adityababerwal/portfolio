@@ -71,8 +71,8 @@
 }
 
 @keyframes upDown {
-  from {transform: translateY(20px);}
-  to {transform: translateY(20px);}
+  from {transform: translateY(1vh);}
+  to {transform: translateY(1vh);}
 
   50% {transform: translateY(0px);}
 }
@@ -85,6 +85,11 @@
   height: calc(3416px / 6);
   border-radius: 1rem;
   box-shadow: 10px 10px 30px rgb(0,0,0);
+}
+
+.typingText::before {
+  content: ".";
+  color: var(--bg);
 }
 
 .typingText {

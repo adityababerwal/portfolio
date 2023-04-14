@@ -26,7 +26,7 @@ const Home = () => {
                 sequence={['Programmer', 1000, 'Web Developer', 1000, 'Gamer', 1000]}
                 style={{ fontSize: '2em' }}
                 repeat={Infinity}
-                cursor={false}
+                speed={{type: 'keyStrokeDelayInMs', value: 100}}
               />
             </span>
           </div>
