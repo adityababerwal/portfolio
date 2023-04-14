@@ -1,24 +1,13 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import './Home.css';
+import MyImage from './hanuman.jpg';
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
-
-  // const [text, setText] = useState("")
-  const [index, setIndex] = useState(0)
-  const phrases = ["Programmer", "Web Developer", "Gamer"]
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setIndex((index) => (index + 1) % phrases.length);
-    }, 2000);
-
-    return () => clearInterval(intervalId);
-  }, []);
 
   return (
   <div id="Home">
@@ -31,7 +20,15 @@ const Home = () => {
             Aditya Baberwal
           </div>
           <div className="whoAmI">
-            <span>And I am a</span> <span className="typingText"> {phrases[index]}</span>
+            <span>And I am a</span>
+            <span className="typingText">
+              <TypeAnimation
+                sequence={['Programmer', 1000, 'Web Developer', 1000, 'Gamer', 1000]}
+                style={{ fontSize: '2em' }}
+                repeat={Infinity}
+                cursor={false}
+              />
+            </span>
           </div>
 
           <div className="mediaLinks">
@@ -57,6 +54,7 @@ const Home = () => {
         </div>
 
         <div className="image">
+          <img src={MyImage} alt="this is my image"/>
         </div>
       </div>
   </div>
