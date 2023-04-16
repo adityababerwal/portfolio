@@ -1,21 +1,60 @@
 #About {
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.About.container {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 
-.about.cards {
-  background-color: red;
+.About.stuff {
+  margin-top: 5vh;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 80%;
-  height: 60%;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .About.stuff {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.about.card {
-  background-color: lightblue;
+.heading {
+  padding: 1em 2em;
+  text-align: center;
+  background-color: white;
+  border-radius: 5rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  box-shadow: 0 0 10px black;
+  background: linear-gradient(109.6deg, rgb(209, 158, 246) 11.2%, rgb(93, 219, 241) 91.1%);
+}
+@media (max-width: 800px) {
+  .heading {
+    width: 50vw;
+  }
+}
+.heading:hover {
+  animation: blurrr .5s ease-in-out;
+}
+@keyframes blurrr {
+  50% {filter: blur(.1em);
+       transform: scale(1.02);}
+}
+
+.About.stuff li {
+  list-style: none;
+  background-color: #89e9f2;
+  margin: 1em auto;
+  padding: 0.5em;
+  width: 90%;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: .9rem;
 }

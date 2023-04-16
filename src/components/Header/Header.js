@@ -4,7 +4,7 @@ import HamBurgDrawer from './HamburgDrawer.js';
 
 const Header = () => {
 
-  const Pages = ["Home", "Projects", "About"];
+  const Pages = ["Home", "About", "Projects"];
 
 
   return (

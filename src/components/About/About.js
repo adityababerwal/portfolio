@@ -1,30 +1,55 @@
-import React from "react";
+import React  from "react";
 import './About.css';
 
 const About = () => {
+
   return (
     <div id="About">
-      <div className="title">
-        About
-      </div>
+      <div className="About container">
 
-      <div className="about cards">
-        <div className="about card">
-          <span className="about heading">Technical Skills</span>
-          <ul>
-            <li><b>Programming:</b>C/C++, Python</li>
-            <li><b>Tools:</b>Git, Jupyter</li>
-            <li><b>Libraries/Frameworks:</b>Pandas, Numpy</li>
-            <li><b>Web Skills:</b>HTML, CSS, JS, React</li>
-            <li><b>Operating System:</b>Linux</li>
-          </ul>
+        <div className="title">About</div>
+
+        <div className="About stuff">
+
+          <div className="education">
+            <div className="heading">
+              Education
+            </div>
+            
+              <li>3rd Year</li>
+              <li>Mechanical Engg</li>
+              <li>IIT Patna</li>
+            
+          </div>
+
+          <div className="skills">
+            <div className="heading">
+              Techincal Skills
+            </div>
+            
+              <li>Git</li>
+              <li>C/C++, Python</li>
+              <li>HTML, CSS, JS, ReactJS</li>
+              <li>Linux</li>
+              <li>SolidWorks, MatLab</li>
+              <li>Arduino, RaspberryPi</li>
+            
+          </div>
+
+          <div className="interests">
+            <div className="heading">
+              Interests
+            </div>
+            
+              <li>Web Development</li>
+              <li>Sports</li>
+              <li>C++ Programming</li>
+            
+          </div>
+
         </div>
 
-        <div className="about card">
-          this is a card
-        </div>
       </div>
-
     </div>
   )
 }
