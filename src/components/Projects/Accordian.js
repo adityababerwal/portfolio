@@ -3,7 +3,6 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -125,6 +124,44 @@ export default function ControlledAccordions() {
                 <li>ExpressJS</li>
                 <li>ReactJS</li>
                 <li>NodeJS</li>
+              </ul>
+            </li>
+          </ul>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion
+        expanded={expanded === 'panel4'}
+        onChange={handleChange('panel4')}
+        sx={{
+          boxShadow: '10px 10px 30px #262626',
+          borderRadius: 1,
+        }}
+      >
+        <AccordionSummary
+          aria-controls="panel4bh-content"
+          id="panel3bh-header"
+          sx={{
+            backgroundColor: 'var(--glow-color)',
+            borderRadius: 1,
+          }}
+        >
+          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+            Railway Statistics
+          </Typography>
+          <Typography sx={{ color: 'text.secondary' }}>Data Science</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <ul>
+            <li>Developed code that predicted various outcomes and properties of remarked trains and railway stations across India</li>
+            <li>Tools used
+              <ul>
+                <li>Python</li>
+                <li>Jupyter</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Matplotlib</li>
+                <li>SciKit Learn</li>
               </ul>
             </li>
           </ul>

@@ -5,6 +5,11 @@
   align-items: center;
   min-height: 100vh;
 }
+@media (max-width: 700px) {
+  #About {
+    margin-top: 30vw;
+  }
+}
 
 .About.container {
   display: flex;
