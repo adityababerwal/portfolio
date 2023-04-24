@@ -1,6 +1,5 @@
 import React from "react";
 import './Home.css';
-import MyImage from './hanuman.jpg';
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -54,7 +53,7 @@ const Home = () => {
         </div>
 
         <div className="image">
-          <img src={MyImage} alt="this is my image"/>
+          <img src="https://github.com/adityababerwal/portfolio/raw/master/src/components/Home/hanuman.jpg" alt="this is my image"/>
         </div>
       </div>
   </div>
