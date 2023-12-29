@@ -16,7 +16,7 @@ const About = () => {
               Education
             </div>
             
-              <li>3rd Year</li>
+              <li>4th Year</li>
               <li>Mechanical Engg</li>
               <li>IIT Patna</li>
             
